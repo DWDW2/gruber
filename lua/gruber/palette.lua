@@ -1,5 +1,5 @@
 return {
-    bg = "#000000",
+    bg = "#1a1b1f",
     fg = "#f5f5ff",
     red = "#ff3d00",
     green = "#73c936",
