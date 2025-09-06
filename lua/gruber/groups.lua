@@ -3,7 +3,6 @@ local colors = require("gruber.palette")
 
 M.setup = function()
   return {
-    -- Basic syntax highlighting
     Comment = { fg = colors.green, italic = true },
     Constant = { fg = colors.yellow },
     String = { fg = colors.green },
@@ -11,48 +10,34 @@ M.setup = function()
     Number = { fg = colors.yellow },
     Boolean = { fg = colors.yellow },
     Float = { fg = colors.yellow },
-
-    -- Identifiers
     Identifier = { fg = colors.fg },
     Function = { fg = colors.blue },
-
-    -- Statements
     Statement = { fg = colors.yellow },
-    Conditional = { fg = colors.yellow }, -- if, else, switch, etc.
-    Repeat = { fg = colors.yellow },      -- for, while, etc.
+    Conditional = { fg = colors.yellow },
+    Repeat = { fg = colors.yellow },
     Label = { fg = colors.yellow },
     Operator = { fg = colors.fg },
     Keyword = { fg = colors.yellow },
     Exception = { fg = colors.yellow },
-
-    -- Preprocessor
     PreProc = { fg = colors.yellow },
     Include = { fg = colors.yellow },
     Define = { fg = colors.yellow },
     Macro = { fg = colors.yellow },
     PreCondit = { fg = colors.yellow },
-
-    -- Types
     Type = { fg = colors.fg },
     StorageClass = { fg = colors.fg },
     Structure = { fg = colors.fg },
     Typedef = { fg = colors.fg },
-
-    -- Special
     Special = { fg = colors.yellow },
     SpecialChar = { fg = colors.yellow },
     Tag = { fg = colors.fg },
     Delimiter = { fg = colors.fg },
     SpecialComment = { fg = colors.green },
     Debug = { fg = colors.yellow },
-
-    -- Underlined
     Underlined = { underline = true },
     Ignore = { fg = colors.green },
-    Error = { fg = colors.yellow, bold = true },
-    Todo = { fg = colors.yellow, bold = true },
-
-    -- Treesitter groups
+    Error = { fg = colors.red , bold = true },
+    Todo = { fg = colors.red, bold = true },
     ["@string"] = { fg = colors.green },
     ["@string.regex"] = { fg = colors.green },
     ["@comment"] = { fg = colors.green, italic = true },
@@ -95,17 +80,13 @@ M.setup = function()
     ["@text.note"] = { fg = colors.green },
     ["@text.warning"] = { fg = colors.yellow },
     ["@text.danger"] = { fg = colors.yellow },
-
-    -- LSP groups
     LspReferenceText = { bg = colors.blue },
     LspReferenceRead = { bg = colors.blue },
     LspReferenceWrite = { bg = colors.blue },
     LspCodeLens = { fg = colors.green },
     LspCodeLensSeparator = { fg = colors.green },
     LspSignatureActiveParameter = { fg = colors.yellow },
-
-    -- Diagnostic groups
-    DiagnosticError = { fg = colors.yellow },
+    DiagnosticError = { fg = colors.red },
     DiagnosticWarn = { fg = colors.yellow },
     DiagnosticInfo = { fg = colors.blue },
     DiagnosticHint = { fg = colors.green },
@@ -114,12 +95,10 @@ M.setup = function()
     DiagnosticVirtualTextWarn = { fg = colors.yellow },
     DiagnosticVirtualTextInfo = { fg = colors.blue },
     DiagnosticVirtualTextHint = { fg = colors.green },
-    DiagnosticUnderlineError = { undercurl = true, sp = colors.yellow },
+    DiagnosticUnderlineError = { undercurl = true, sp = colors.red },
     DiagnosticUnderlineWarn = { undercurl = true, sp = colors.yellow },
     DiagnosticUnderlineInfo = { undercurl = true, sp = colors.blue },
     DiagnosticUnderlineHint = { undercurl = true, sp = colors.green },
-
-    -- UI groups
     Normal = { fg = colors.fg, bg = colors.bg },
     NormalFloat = { fg = colors.fg, bg = colors.bg },
     NormalNC = { fg = colors.fg, bg = colors.bg },
@@ -130,7 +109,7 @@ M.setup = function()
     SignColumn = { fg = colors.fg, bg = colors.bg },
     Folded = { fg = colors.green, bg = colors.blue },
     FoldColumn = { fg = colors.green, bg = colors.bg },
-    LineNr = { fg = colors.green },
+    LineNr = { fg = colors.fg },
     CursorLineNr = { fg = colors.fg, bold = true },
     CursorLineSign = { fg = colors.green },
     CursorLineFold = { fg = colors.green },
@@ -141,23 +120,23 @@ M.setup = function()
     IncSearch = { fg = colors.bg, bg = colors.yellow },
     Search = { fg = colors.bg, bg = colors.yellow },
     Substitute = { fg = colors.bg, bg = colors.yellow },
-    Visual = { bg = colors.blue },
-    VisualNOS = { bg = colors.blue },
-    WarningMsg = { fg = colors.yellow },
-    ErrorMsg = { fg = colors.yellow },
+    Visual = { bg = colors.fg },
+    VisualNOS = { bg = colors.fg },
+    WarningMsg = { fg = colors.red },
+    ErrorMsg = { fg = colors.red },
     ModeMsg = { fg = colors.fg },
     MoreMsg = { fg = colors.green },
     Question = { fg = colors.blue },
     QuickFixLine = { fg = colors.bg, bg = colors.yellow },
-    StatusLine = { fg = colors.fg, bg = colors.blue },
-    StatusLineNC = { fg = colors.green, bg = colors.blue },
+    StatusLine = { fg = colors.statusline_fg, bg = colors.statusline_bg },
+    StatusLineNC = { fg = colors.statusline_fg, bg = colors.statusline_bg },
     TabLine = { fg = colors.green, bg = colors.blue },
     TabLineFill = { bg = colors.blue },
     TabLineSel = { fg = colors.fg, bg = colors.bg },
     VertSplit = { fg = colors.green },
     WinSeparator = { fg = colors.green },
-    WildMenu = { fg = colors.bg, bg = colors.yellow },
-    NonText = { fg = colors.green },
+    WildMenu = { fg = colors.bg, bg = colors.red },
+    NonText = { fg = colors.fg },
     SpecialKey = { fg = colors.green },
     Whitespace = { fg = colors.green },
     EndOfBuffer = { fg = colors.bg },
