@@ -1,9 +1,8 @@
 return {
-    bg = "#1a1b1f",
+    bg = "#000000",
     fg = "#f5f5ff",
     red = "#ff3d00",
-    green = "#e5c07b",
-    dark_blue = "#56b6c2",
+    green = "#73c936",
     blue = "#96a6c8",
     yellow = "#ffdd33",
     purple = "#9b59b6",
