@@ -62,7 +62,7 @@ M.setup = function()
     ["@namespace"] = { fg = colors.fg },
     ["@module"] = { fg = colors.fg },
     ["@decorator"] = { fg = colors.yellow },
-    ["@tag"] = { fg = colors.fg },
+    ["@tag"] = { fg = colors.yellow },
     ["@tag.delimiter"] = { fg = colors.fg },
     ["@attribute"] = { fg = colors.yellow },
     ["@text"] = { fg = colors.fg },
