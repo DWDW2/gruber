@@ -8,7 +8,7 @@ M.setup = function()
     String = { fg = colors.green },
     Character = { fg = colors.green },
     Number = { fg = colors.constant },
-    Boolean = { fg = colors.constant },
+    Boolean = { fg = colors.yellow },
     Float = { fg = colors.constant },
     Identifier = { fg = colors.dark_blue },
     Function = { fg = colors.blue },
@@ -140,16 +140,6 @@ M.setup = function()
     SpellCap = { undercurl = true, sp = colors.yellow },
     SpellLocal = { undercurl = true, sp = colors.blue },
     SpellRare = { undercurl = true, sp = colors.blue },
-    Pmenu = { fg = colors.fg, bg = colors.blue },
-    PmenuSel = { fg = colors.bg, bg = colors.blue },
-    PmenuSbar = { bg = colors.blue },
-    PmenuThumb = { bg = colors.green },
-    PmenuKind = { fg = colors.blue },
-    PmenuKindSel = { fg = colors.blue },
-    PmenuExtra = { fg = colors.green },
-    PmenuExtraSel = { fg = colors.green },
-    PmenuMenu = { fg = colors.green },
-    PmenuMenuSel = { fg = colors.green },
   }
 end
 
