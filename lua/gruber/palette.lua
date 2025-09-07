@@ -5,6 +5,7 @@ return {
     green = "#73c936",
     blue = "#96a6c8",
     yellow = "#ffdd33",
+    constant = "949BB0",
     purple = "#9b59b6",
     orange = "#e67e22",
     cursorline = "#1c2b3a",
